@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Social proof section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 600px;
+    }
+
+    .one {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .title {
+      width: 400px;
+    }
+
+    .title h1 {
+      color: hsl(300, 43%, 22%);
+    }
+
+    .title p {
+      color: hsl(303, 10%, 53%);
+    }
+
+    .box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+    }
+
+    .box1 {
+      color: hsl(300, 43%, 22%);
+      background-color: whitesmoke;
+      height: 50px;
+      margin: 5px;
+      border-radius: 5px;
+      position: relative;
+      right: 40px;
+
+    }
+
+    .box2 {
+      color: hsl(300, 43%, 22%);
+      background-color: whitesmoke;
+      height: 50px;
+      margin: 5px;
+      border-radius: 5px;
+      position: relative;
+      right: 20px;
+    }
+
+    .box3 {
+      color: hsl(300, 43%, 22%);
+      background-color: whitesmoke;
+      height: 50px;
+      margin: 5px;
+      border-radius: 5px;
+      position: relative;
+    }
+
+    .bigbox {
+
+      color: white;
+    }
+
+    .bigbox img {
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .section {
+      display: flex;
+      gap: 10px;
+      width: 77%;
+    }
+
+    .smith {
+      position: relative;
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 10px;
+      padding: 20px;
+
+    }
+
+    .roberts {
+      position: relative;
+      top: 20px;
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .anne {
+      position: relative;
+      background-color: hsl(300, 43%, 22%);
+      top: 40px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .image {
+      display: flex;
+    }
+    span{
+      color:hsl(333, 80%, 67%) ;
+    }
+    .img{
+      position: relative;
+      top: 15px;
+    }
+    .img2{
+      position: relative;
+      top: 20px;
+    }
+    @media screen and (max-width:605px){
+       .section , .one{
+        flex-wrap: wrap;
+      }
+      .box1 , .box2 {
+        position: relative;
+        right: 0px;
+      } 
+      .box1,.box2,.box3{
+        width: 100%;
+      }
+      .title{
+        font-size: medium;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class=" main">
+    <div class="one">
+      <div class="title">
+        <h1> 10,000+ of our users love our products.</h1>
+
+        <p>We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.</p>
+      </div>
+
+      <div class="star">
+        <div class="box box1">
+          <div><img src="./images/icon-star.svg" alt=""><img src="./images/icon-star.svg" alt=""><img
+              src="./images/icon-star.svg" alt=""><img src="./images/icon-star.svg" alt=""><img
+              src="./images/icon-star.svg" alt=""></div>
+          <div> Rated 5 Stars in Reviews</div>
+        </div>
+
+        <div class=" box box2">
+          <div><img src="./images/icon-star.svg" alt=""><img src="./images/icon-star.svg" alt=""><img
+              src="./images/icon-star.svg" alt=""><img src="./images/icon-star.svg" alt=""><img
+              src="./images/icon-star.svg" alt=""></div>
+          <div>Rated 5 Stars in Report Guru</div>
+        </div>
+
+        <div class="box box3">
+          <div><img src="./images/icon-star.svg" alt=""><img src="./images/icon-star.svg" alt=""><img
+              src="./images/icon-star.svg" alt=""><img src="./images/icon-star.svg" alt=""><img
+              src="./images/icon-star.svg" alt=""> </div>
+          <div>Rated 5 Stars in BestTech</div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="bigbox">
+        <div class=" smith">
+          <div class="image"><img src="images/image-colton.jpg" alt="">
+            <pre>
+    Colton Smith
+    <span>Verified Buyer</span>
+              </pre>
+          </div>
+          <p>
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
+        </div>
+      </div>
+      <div class="bigbox">
+        <div class="roberts">
+          <div class="image"><img class="img" src="./images/image-irene.jpg" alt="">
+            <pre> 
+  Irene Roberts 
+  <span>Verified Buyer</span></pre>
+          </div>
+          <p>"Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."</p>
+        </div>
+      </div>
+      <div class="bigbox">
+        <div class=" anne">
+          <div class="image"><img class="img2" src="./images/image-anne.jpg" alt="">
+            <pre> 
+    Anne Wallace 
+    <span>Verified Buyer</span></pre>
+          </div>
+          <p> "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
+  </div>
+  </div>
+</body>
+
+</html>
