@@ -12,148 +12,187 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
+    @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+    body{
+      display: flex;
+      justify-content: center;
+      align-content: center;
     }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-
     .main {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-background-color: rgba(221, 160, 221, 0.532);
-      height: 600px;
+      flex-direction: column; 
+      /* background-color: rgba(221, 160, 221, 0.532); */
+      height: 1000px;
+      width: 1100px;
+      margin-top: 20px;
     }
 
     .one {
       display: flex;
-      justify-content: space-around;
-      width: 100%;
+      
     }
 
-    .title {
-      width: 400px;
-    }
+    
 
     .title h1 {
       color: hsl(300, 43%, 22%);
+      font-size: 50px;
+      font-weight: 1000;
+      font-family: 'League Spartan';
+      width: 60%;
+      margin-bottom: 0px;
     }
 
     .title p {
       color: hsl(303, 10%, 53%);
+      width: 60%;
+      font-weight: 400;
+      font-size: 17px;
+      font-family: 'League Spartan', sans-serif;
     }
 
     .box {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      color: hsl(300, 43%, 22%);
+      background-color: hsl(300, 24%, 96%);
+      height: 50px;
+      width: 400px;
+      margin: 5px;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-weight: 1000;
+      font-family: 'League Spartan', sans-serif;
+
+    }
+    .star {
+      display: flex;
+      flex-direction: column;
+      margin-top: 60px;
+
+    }
+    .bigbox {
+      display: flex;
+      gap: 15px;
+      margin-top: 50px;
+    }
+    .boxes {
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 10px;
+      padding: 25px;
+      color: hsl(0, 0%, 100%);
 
     }
 
     .box1 {
-      color: hsl(300, 43%, 22%);
-      background-color: whitesmoke;
-      height: 50px;
-      margin: 5px;
-      border-radius: 5px;
+     
       position: relative;
       right: 40px;
 
     }
 
     .box2 {
-      color: hsl(300, 43%, 22%);
-      background-color: whitesmoke;
-      height: 50px;
-      margin: 5px;
-      border-radius: 5px;
+      
       position: relative;
       right: 20px;
     }
 
-    .box3 {
-      color: hsl(300, 43%, 22%);
-      background-color: whitesmoke;
-      height: 50px;
-      margin: 5px;
-      border-radius: 5px;
-      position: relative;
-    }
+    
 
-    .bigbox {
-
-      color: white;
-    }
+    
 
     .bigbox img {
-      height: 50px;
+      height: 40px;
       border-radius: 50%;
-    }
-
-    .section {
-      display: flex;
-      gap: 10px;
-      width: 77%;
-    }
-
-    .smith {
       position: relative;
-      background-color: hsl(300, 43%, 22%);
-      border-radius: 10px;
-      padding: 20px;
+      top: 10px;
+    }
+
+    
+    .boxes>div {
+      display: flex;
 
     }
+    
 
     .roberts {
       position: relative;
       top: 20px;
-      background-color: hsl(300, 43%, 22%);
-      border-radius: 10px;
-      padding: 20px;
+      margin-left: 10px;
     }
+      
+    
 
     .anne {
       position: relative;
-      background-color: hsl(300, 43%, 22%);
+      
       top: 40px;
-      border-radius: 10px;
-      padding: 20px;
+      
     }
 
-    .image {
-      display: flex;
+   
+    span {
+      color: hsl(333, 80%, 67%);
     }
-    span{
-      color:hsl(333, 80%, 67%) ;
-    }
-    .img{
-      position: relative;
-      top: 15px;
-    }
-    .img2{
-      position: relative;
-      top: 20px;
-    }
-    @media screen and (max-width:605px){
-       .section , .one{
+
+    @media screen and (max-width:650px) {
+      .one {
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
       }
-      .box1 , .box2 {
+
+      .bigbox {
+        flex-wrap: wrap;
+        width: 87vw;
+      }
+
+      .roberts {
+        margin-left: 0px;
+      }
+
+      .anne{
+        position: relative;
+        top: 0px;
+      }
+
+      .box {
+        width: 80vw;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .box1 {
         position: relative;
         right: 0px;
-      } 
-      .box1,.box2,.box3{
-        width: 100%;
+
       }
-      .title{
-        font-size: medium;
+
+      .box2 {
+        position: relative;
+        right: 0px;
       }
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+      }
+
+      .image {
+        display: none;
+      }
+
+
     }
+
+  
   </style>
 </head>
 
@@ -190,9 +229,9 @@ background-color: rgba(221, 160, 221, 0.532);
         </div>
       </div>
     </div>
-    <div class="section">
+    <div class="one">
       <div class="bigbox">
-        <div class=" smith">
+        <div class=" boxes smith">
           <div class="image"><img src="images/image-colton.jpg" alt="">
             <pre>
     Colton Smith
@@ -204,22 +243,22 @@ background-color: rgba(221, 160, 221, 0.532);
             Not only did they find the original order, but we also received it in time.
             Excellent!"</p>
         </div>
-      </div>
-      <div class="bigbox">
-        <div class="roberts">
+      
+      
+        <div class="boxes roberts">
           <div class="image"><img class="img" src="./images/image-irene.jpg" alt="">
-            <pre> 
+            <pre>
   Irene Roberts 
   <span>Verified Buyer</span></pre>
           </div>
           <p>"Customer service is always excellent and very quick turn around. Completely
             delighted with the simplicity of the purchase and the speed of delivery."</p>
         </div>
-      </div>
-      <div class="bigbox">
-        <div class=" anne">
+  
+      
+        <div class=" boxes anne">
           <div class="image"><img class="img2" src="./images/image-anne.jpg" alt="">
-            <pre> 
+            <pre>
     Anne Wallace 
     <span>Verified Buyer</span></pre>
           </div>
@@ -227,16 +266,10 @@ background-color: rgba(221, 160, 221, 0.532);
             standard. Will definitely use them again and recommend them to everyone!"</p>
         </div>
       </div>
-
     </div>
   </div>
 
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
-      Name Here</a>.
-  </div>
-  </div>
+  
 </body>
 
 </html>
