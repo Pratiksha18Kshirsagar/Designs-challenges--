@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+  </style>
+  <style>
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(185, 75%, 39%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      height: 400px;
+      width: 400px;
+      border-radius: 10px;
+
+    }
+
+    .profile {
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      position: relative;
+      bottom: 50px;
+      border: 5px solid white;
+
+    }
+
+    .svg1 {
+      border-radius: 10px 10px 0px 0px;
+      position: relative;
+      width: 400px;
+    }
+
+    .box {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      padding-top: 10px;
+
+    }
+
+    .pop {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    p {
+      margin: 0;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 700;
+      color: hsl(229, 23%, 23%);
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-items: center;
+      margin-bottom: 15px;
+      margin-top: -20px;
+
+    }
+
+    .one {
+      color: hsl(0, 0%, 59%);
+    }
+
+    .col {
+      color: hsl(0, 0%, 59%);
+      font-weight: 400;
+    }
+    @media screen and (max-width:400px){
+      .container{
+        height: 350px;
+        width: 350px;
+      }
+      .svg1{
+        width: 350px;
+      }
+      
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <img class="svg1" src="./images/bg-pattern-card.svg" alt="">
+      <img class="profile" src="./images/image-victor.jpg" alt="">
+      <div class="info">
+        <p>Victor Crest
+          <span class="one col">26</span>
+        </p>
+        <p> <span class="col">London</span></p>
+      </div>
+      <hr style="width:100%">
+
+
+      <div class="box">
+        <div class="pop first">
+          <p>80K</p>
+          <p class="col">Followers</p>
+        </div>
+        <div class=" pop sec">
+          <p> 803K</p>
+          <p class="col"> Likes</p>
+        </div>
+        <div class=" pop third">
+          <p> 1.4K</p>
+          <p class="col">Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
