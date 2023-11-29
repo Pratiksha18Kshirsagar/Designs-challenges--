@@ -15,12 +15,22 @@
     @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
   </style>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      background:right 50vw bottom 50vh no-repeat url(./images/bg-pattern-top.svg ), left 50vw top 50vh no-repeat url(./images/bg-pattern-bottom.svg)  hsl(185, 75%, 39%); ;
+
+    }
+
+
     .main {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background-color: hsl(185, 75%, 39%);
+      
     }
 
     .container {
@@ -31,6 +41,8 @@
       height: 400px;
       width: 400px;
       border-radius: 10px;
+      position: relative;
+      z-index: 10;
 
     }
 
@@ -89,21 +101,36 @@
       color: hsl(0, 0%, 59%);
       font-weight: 400;
     }
-    @media screen and (max-width:400px){
-      .container{
+
+    @media screen and (max-width:400px) {
+      .container {
         height: 350px;
         width: 350px;
       }
-      .svg1{
+
+      .svg1 {
         width: 350px;
       }
-      
+
     }
+
+    /* .top {
+      position: relative;
+      bottom: 310px;
+      left: 211px;
+    }
+
+    .bottom {
+      position: relative;
+      top: 530px;
+      right: 284px;
+    } */
   </style>
 </head>
 
 <body>
   <div class="main">
+    <!-- <img class="top" src="./images/bg-pattern-top.svg" alt=""> -->
     <div class="container">
       <img class="svg1" src="./images/bg-pattern-card.svg" alt="">
       <img class="profile" src="./images/image-victor.jpg" alt="">
@@ -131,6 +158,7 @@
         </div>
       </div>
     </div>
+    <!-- <img class="bottom" src="./images/bg-pattern-bottom.svg" alt=""> -->
   </div>
 
 </body>
