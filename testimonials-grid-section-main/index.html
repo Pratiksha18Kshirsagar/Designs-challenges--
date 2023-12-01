@@ -31,7 +31,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      gap: 10px;
+      gap: 15px;
       width: 1000px;
       height: 500px;
 
@@ -41,36 +41,41 @@
     .box1 {
       background-color: hsl(263, 55%, 52%);
       grid-column: span 2;
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
       position: relative;
+      height: 230px;
+
 
     }
 
     .box2 {
       background-color: hsl(217, 19%, 35%);
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
     }
 
     .box3 {
       background-color: hsl(0, 0%, 100%);
       grid-row: span 2;
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
+      height: 507px;
     }
 
     .box4 {
       background-color: hsl(0, 0%, 100%);
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
+      height: 200px;
     }
 
     .box5 {
       background-color: hsl(219, 29%, 14%);
       grid-column: span 2;
-      padding: 20px;
+      padding: 30px;
       border-radius: 10px;
+      height: 200px;
     }
 
     .name img {
@@ -103,11 +108,14 @@
     }
 
     .white>:nth-child(3) {
-      color: hsla(0, 0%, 81%, 0.616);
+      color: hsla(0, 0%, 81%, 0.591);
       font-weight: 400;
       font-size: 13px;
     }
-
+.one{
+  color: hsla(0, 0%, 81%, 0.669);
+  font-size: 13px;
+}
     .name p {
       color: hsl(0, 0%, 81%);
     }
@@ -142,6 +150,7 @@
     .pop{
       position: relative;
       z-index: 10;
+      bottom: 98px;
     }
     
   </style>
@@ -165,7 +174,7 @@
         <p>I received a job offer mid-course, and the subjects I learned were current, if not more so,
           in the company I joined. I honestly feel I got every penny’s worth.</p>
 
-        <p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+        <p class="one">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
           transition and have heard some people who had an amazing experience here. I signed up
           for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
           The next 12 weeks was the best - and most grueling - time of my life. Since completing
