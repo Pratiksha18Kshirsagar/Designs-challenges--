@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+  </style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      height: 80vh;
+      width: 80vw;
+      font-family: 'Inter', sans-serif;
+
+    }
+
+    .box1 {
+      background-color: hsl(244, 38%, 16%);
+      height: 400px;
+      width: 50%;
+
+    }
+
+    .img {
+      background-image: url(./images/image-header-desktop.jpg);
+      height: 400px;
+      background-repeat: no-repeat;
+      width: 50%;
+      position: relative;
+
+    }
+
+    .violet {
+      background-color: hsl(277, 64%, 61%);
+      opacity: 0.69;
+      position: relative;
+      z-index: 10;
+      height: inherit;
+      width: 100%;
+    }
+
+    .p>:nth-child(1) {
+      color: hsl(0, 0%, 100%);
+      font-size: 35px;
+      font-weight: 700;
+
+    }
+
+    .p>:nth-child(2) {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+      font-weight: 400;
+      padding-top: 30px;
+
+    }
+
+    .p {
+      padding: 40px;
+      margin-left: 20px;
+    }
+
+    span {
+      color: hsl(277, 64%, 61%);
+    }
+
+    .sub {
+      display: flex;
+      color: hsl(0, 0%, 100%);
+      justify-content: space-between;
+      padding-top: 50px;
+     
+    }
+    .sub div >:nth-child(1){
+      font-weight: 700;
+      font-size: 20px;
+
+    }
+    .sub div >:nth-child(2){
+      color:hsla(0, 0%, 100%, 0.75) ;
+      font-weight: 400;
+      font-size: 15px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="box1">
+        <div class="p">
+          <p>Get <span>insights</span> that help your business grow.</p>
+
+          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.</p>
+          <div class="sub">
+            <div>
+              <p>10k+ </p>
+               <p>companies</p>
+            </div>
+            <div>
+              <p> 314 </p>
+              <p> templates</p>
+            </div>
+            <div>
+              <p>12m+ </p>
+              <p> queries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="img">
+        <div class="violet">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
