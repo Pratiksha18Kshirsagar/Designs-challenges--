@@ -13,6 +13,7 @@
         .container {
             display: flex;
             height: 70vh;
+
             justify-content: center;
             align-items: center;
             gap: 20px;
@@ -47,19 +48,26 @@
             margin-right: auto;
             box-shadow: 2px 2px 20px white;
         }
-        .txt:hover{
+
+        .txt:hover {
             background-color: blanchedalmond;
         }
-        button{
+
+        button {
             border-radius: 50%;
             border: 2px solid rgb(141, 15, 15);
 
         }
-        button:hover{
+
+        button:hover {
             box-shadow: 5px 5px 25px rgb(130, 28, 28);
         }
-        
-        
+
+        @media screen and (max-width:1200px) {
+            .container {
+                flex-wrap: wrap;
+            }
+        }
     </style>
 </head>
 
@@ -70,15 +78,15 @@
     <div class="container">
 
         <div class="box1 box">
-           <button id="myBtn"><img src="./snaku.jpg" alt=""></button> 
+            <button id="myBtn"><img src="./snaku.jpg" alt=""></button>
         </div>
         <div class="box2 box">
-           <button id="myBtn1"><img src="./wateru.jpg" alt=""></button> 
+            <button id="myBtn1"><img src="./wateru.jpg" alt=""></button>
         </div>
         <div class="box3 box">
-           <button id="myBtn2"> <img src="./gun.png" alt=""></button>
+            <button id="myBtn2"> <img src="./gun.png" alt=""></button>
         </div>
-        
+
 
     </div>
     <script src="script.js"></script>
