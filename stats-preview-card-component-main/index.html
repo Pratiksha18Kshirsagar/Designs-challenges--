@@ -20,12 +20,15 @@
       margin: 0;
       padding: 0;
     }
+    body{
+      background-color: black;
+    }
 
     .main {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: black;
+      
       height: 100vh;
     }
 
@@ -111,7 +114,7 @@
       background-image: url(./images/image-header-mobile.jpg);
       height: 400px;
       background-repeat: no-repeat;
-     
+
       position: relative;
     }
 
@@ -119,11 +122,12 @@
       .img1 {
         display: none;
       }
-    .box1{
-      height: 400px;
+
+      .box1 {
+        height: 400px;
+      }
     }
-    }
-    
+
 
     @media screen and (max-width:900px) {
       .img {
@@ -133,22 +137,26 @@
       .container {
         flex-direction: column;
       }
-      .box1{
+
+      .box1 {
         width: 75vw;
       }
+
       .sub {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 35px;
       }
-      .sub div{
+
+      .sub div {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
       }
-      .p{
+
+      .p {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -156,11 +164,12 @@
         margin: 0;
         text-align: center;
       }
-      .img1{
+
+      .img1 {
         width: 75vw;
       }
-      
-    
+
+
     }
   </style>
 </head>
@@ -169,7 +178,7 @@
   <div class="main">
     <div class="container">
       <div class="img1">
-<div class="violet"></div>
+        <div class="violet"></div>
       </div>
       <div class="box1">
         <div class="p">
