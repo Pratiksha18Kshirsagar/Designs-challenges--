@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+  </style>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 100vh; */
+      align-content: flex-start;
+      margin-top: 50px;
+      flex-direction: column;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: hsl(0, 0%, 98%);
+    }
+
+    .box {
+      height: 200px;
+      width: 280px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 10px;
+      box-shadow: 5px 5px 10px 0px hsl(229, 6%, 66%);
+      /* padding: 20px; */
+      position: relative;
+
+    }
+
+    img {
+      float: right;
+      position: relative;
+      top: 10px;
+      right: 5px;
+    }
+
+    .mid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      /* align-content: center; */
+    }
+
+    .mid p {
+      width: 400px;
+      text-align: center;
+      margin: 0;
+
+
+    }
+
+    .box :nth-child(2) {
+      font-weight: 600;
+      padding-left: 10px;
+
+    }
+
+    .box :nth-child(3) {
+      font-weight: 600;
+      font-size: 12px;
+      color: hsl(229, 6%, 66%);
+      padding-left: 10px;
+    }
+
+
+    .mid :nth-child(1) {
+      color: hsl(229, 6%, 66%);
+      font-weight: 400;
+      font-size: 30px;
+      padding-top: 50px;
+    }
+
+    span {
+      font-size: 30px;
+      font-weight: 600;
+      color: hsl(234, 12%, 34%);
+    }
+
+    .mid :nth-child(3) {
+      font-weight: 400;
+      font-size: 10px;
+      color: hsl(229, 6%, 66%);
+      ;
+
+    }
+
+    .strip {
+
+      height: 5px;
+      border-radius: 10px 10px 0px 0px;
+      /* background-color: red; */
+    }
+
+    .cyan {
+      background-color: cyan;
+    }
+
+    .orange {
+      background-color: orange;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .main {
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width:900px) {
+      .container {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+      .main {
+        flex-direction: column;
+        margin-top: 30px;
+      }
+
+      .mid {
+        width: 280px;
+        align-items: flex-start;
+      }
+
+      .mid p {
+        width: 280px;
+        text-align:justify;
+      }
+      .mid :nth-child(1){
+        font-size: 20px;
+      }
+    
+      span{
+        font-size: 20px;
+        text-align:justify;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class=" mid">
+      <p> Reliable, efficient delivery</p>
+      <span>Powered by Technology</span>
+
+
+      <p>Our Artificial Intelligence powered tools use millions of project data points
+        to ensure that your project is successful</p>
+    </div>
+
+
+
+    <div class="main">
+      <div class=" box box1 ">
+        <div class="cyan strip"></div>
+        <p> Supervisor</p>
+        <p> Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt="">
+      </div>
+
+      <div class="column">
+        <div class="box box2">
+          <div class="red strip"></div>
+          <p>Team Builder</p>
+          <p> Scans our talent network to create the optimal team for your project</p>
+          <img src="./images/icon-team-builder.svg" alt="">
+        </div>
+
+        <div class="box box3">
+          <div class="orange strip"></div>
+          <p> Karma</p>
+          <p> Regularly evaluates our talent to ensure quality</p>
+          <img src="./images/icon-karma.svg" alt="">
+        </div>
+      </div>
+
+      <div class="box box4">
+        <div class="blue strip"></div>
+        <p> Calculator</p>
+        <p> Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

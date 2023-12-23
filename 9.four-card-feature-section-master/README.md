@@ -1,6 +1,6 @@
-# Frontend Mentor - Social proof section
+# Frontend Mentor - Four card feature section
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
@@ -12,13 +12,13 @@ Thanks for checking out this front-end coding challenge.
 
 ## The challenge
 
-Your challenge is to build out this social proof section and get it looking as close to the design as possible.
+Your challenge is to build out this feature section and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-Your users should be able to:
+Your users should:
 
-- View the optimal layout for the section depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
