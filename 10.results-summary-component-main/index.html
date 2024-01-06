@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+  </style>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Hanken Grotesk', sans-serif;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 360px 360px;
+      height: 350px;
+    }
+
+    .sub1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(241, 81%, 54%);
+      border-radius: 25px 25px 25px 25px;
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      padding: 30px;
+
+
+    }
+
+    .circle {
+      background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+    }
+
+    .circle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
+    .circle span {
+
+      font-size: 80px;
+      font-weight: 800;
+      padding: 0;
+      margin: 0;
+    }
+
+    .circle p {
+      padding: 0;
+      margin: 0;
+      color: hsla(222, 100%, 96%, 0.404);
+      font-size: 15px;
+    }
+
+    .sub2 {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .result {
+      color: hsla(222, 100%, 96%, 0.493);
+      font-size: 20px;
+    }
+
+    .grt {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 0;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    .p {
+      color: hsla(222, 100%, 96%, 0.58);
+      font-size: 15px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .box1 {
+      background-color: hsla(0, 100%, 67%, 0.139);
+      color: hsl(0, 100%, 67%);
+
+    }
+
+    .box2 {
+      background-color: hsla(39, 100%, 56%, 0.18);
+      color: hsl(39, 100%, 56%);
+    }
+
+    .box3 {
+      background-color: hsla(166, 100%, 37%, 0.153);
+      color: hsl(166, 100%, 37%);
+    }
+
+    .box4 {
+      background-color: hsla(234, 85%, 45%, 0.112);
+      color: hsl(234, 85%, 45%);
+    }
+
+    .but {
+      width: 250px;
+      background-color: #303B5C;
+      color: white;
+      border-radius: 30px;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+
+    .percentage {
+      display: flex;
+      position: absolute;
+      left: 70%;
+      gap: 10px;
+    }
+
+    .marks {
+      color: #303B5C;
+      font-weight: 800;
+    }
+
+    .hun {
+      color: #303b5c99;
+      font-weight: 400;
+    }
+
+    .sum {
+      color: #303B5C;
+      font-weight: 800;
+      font-size: 20px;
+      align-self: flex-start;
+      margin-left: 30px;
+    }
+
+    img {
+      padding: 10px;
+    }
+
+    @media screen and (max-width: 680px) {
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container {
+        display: block;
+      }
+
+      .sub1 {
+        width: 100vw;
+        border-radius: 0px 0px 25px 25px;;
+      }
+
+      .sub2 {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .box{
+        width: 100vw;
+        margin-left: 75px;
+      }
+      .percentage{
+       left: 80%;
+      }
+      .but{
+        width: 80vw;
+    margin-left: 60px;
+      }
+      
+     
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="sub1">
+        <p class="result">Your Result</p>
+        <div class="circle">
+          <span>76</span>
+          <p>of 100</p>
+        </div>
+
+        <p class="grt">Great</p>
+        <p class="p">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <div class="sub2">
+        <p class="sum">Summary</p>
+        <div class="box box1">
+          <img src="./assets/images/icon-reaction.svg" alt="">
+          Reaction <div class="percentage">
+            <p class="marks"> 80</p>
+            <p class="hun">/ 100</p>
+          </div>
+        </div>
+
+        <div class="box box2">
+          <img src="./assets/images/icon-memory.svg" alt="">
+          Memory <div class="percentage">
+            <p class="marks">92</p>
+            <p class="hun">/ 100</p>
+          </div>
+        </div>
+
+        <div class="box box3">
+          <img src="./assets/images/icon-verbal.svg" alt="">
+          Verbal <div class="percentage">
+            <p class="marks"> 61</p>
+            <p class="hun"> / 100</p>
+          </div>
+        </div>
+        <div class="box box4">
+          <img src="./assets/images/icon-visual.svg" alt="">
+          Visual <div class="percentage">
+            <p class="marks"> 72</p>
+            <p class="hun">/ 100</p>
+          </div>
+        </div>
+
+        <div class="but"> Continue</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
